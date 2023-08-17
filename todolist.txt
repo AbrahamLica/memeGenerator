@@ -1,0 +1,7 @@
+próximos passos:
+
+1 - gerar a mesma quantidade de labels na imagem, para bater com a quantidade de box dos editores...
+
+2 -  adicionar função para alterar cor de texto, estilo de fonte, negrito, italico, etc 
+
+3 - função para fazer donwload do meme editado 

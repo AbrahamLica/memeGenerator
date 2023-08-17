@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/home/index.css" />
+    <link rel="stylesheet" href="./css/home/header.css" />
+    <link rel="stylesheet" href="./css/home/footer.css" />
+    <link rel="stylesheet" href="./css/editor/editor.css">
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+    <title>Meme Generator</title>
+  </head>
+
+  <body onload="getMemes()">
+    <!-------------------------- Home page -------------------------->
+
+    <header>
+      <h1>Meme Generator</h1>
+      <p>Crie seus memes personalizados e compartilhe com os seus amigos!</p>
+    </header>
+
+    <!-- pagina home que vai ser clonada -->
+    <div class="toRemoveAfterClone">
+      <div class="containerCard">
+        <div class="containerTop">
+          <p class="titleMeme"></p>
+          <img class="imgMeme" src="" alt="meme photo" />
+        </div>
+        <div class="containerBottom">
+          <button class="addCaption">Add a caption</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ContainerTools que vai ser clonado -->
+    <div class="toRemoveAfterCloneTool">
+      <div class="containerTool">
+        <div class="containerAddText">
+          <input type="text" placeholder='Insert the caption here' class="inputText"></input>
+        </div>
+        <div class="containerOptions">
+              <button class="increaseFontSize">+</button>
+              <button class="decreaseFontSize">-</button>
+        </div>
+      </div>
+  </div>
+
+    <main class="mainContainer">
+      <section class="containerCards">
+        <!-- aqui vai ser o destino da clonagem da pagina inicial -->
+      </section>
+
+      <!-- editor de imagem, que aparece depois que a imagem é selecionada -->
+      <div class="mainContainerEditor">
+        <section class="containerEditor">
+
+          <div class="containerBlackboard" id="containerBlackboard">
+            <img src="" alt="" class="imgToEdit" />
+          </div>
+
+          <div class="mainContainerTools">
+            <!-- Aqui vai ser o destino da clonagem do containerTools que está la encima -->
+          </div>
+
+        </section>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>
+        Made by
+        <a href="https://github.com/AbrahamLica" target="_blank"
+          >Abraham Licá</a
+        >
+      </p>
+      <button onclick="teste()">teste</button>
+    </footer>
+  </body>
+
+  <script src="./js/home.js"></script>
+  
+</html>
+
+<!-- HTML SEMANTICO -->
+<!--
+    <header>
+    <section>
+    <article>
+    <nav>
+    <aside>
+    <main>
+    <footer>
+    <strong>
+    -->
+<!-- --------------- -->

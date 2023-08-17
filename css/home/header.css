@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 10vh;
+  background-color: black;
+}
+
+header h1 {
+  color: white;
+}
+
+header p {
+  color: white;
+}

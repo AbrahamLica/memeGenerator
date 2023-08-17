@@ -1,0 +1,82 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: gray;
+}
+
+/* conteúdo de origem da clonagem */
+.containerCard {
+  display: none;
+  width: 200px;
+  min-height: 250px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.containerTop {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  /* background-color: red; */
+  /* padding: 5px; */
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.titleMeme {
+  font-size: 15px;
+}
+
+.imgMeme {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.containerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.containerBottom button {
+  cursor: pointer;
+  font-size: 17px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* conteúdo de destino da clonagem */
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  min-height: 60vh;
+  background-color: white;
+  padding: 20px;
+}
+
+.containerCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
